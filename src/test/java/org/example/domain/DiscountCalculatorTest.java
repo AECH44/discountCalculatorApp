@@ -49,7 +49,7 @@ class DiscountCalculatorTest {
     void shouldThrowExceptionForNegativeAmount() {
 
         assertThrows(
-                IllegalArgumentException.class,
+                InvalidPurchaseException.class,
                 () -> calculator.calculateFinalPrice(-10, true)
         );
     }
